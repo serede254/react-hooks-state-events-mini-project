@@ -6,7 +6,7 @@ const TaskList = ({ tasks, onDeleteTask }) => {
     <div className="tasks">
       {tasks.map((task) => (
         <Task
-          key={task.id} // Ensure task.id or another unique identifier is used as the key
+          key={task.id} 
           task={task}
           onDelete={() => onDeleteTask(task.id)}
         />
